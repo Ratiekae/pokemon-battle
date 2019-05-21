@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pokemon Battle</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Pokemon Battle!</h1>
+      <!--royale?-->
+    </header>
+
+    <div class="start" id="start-menu">
+      <h1>Welcome to Pokemon Battle Royale!</h1>
+      <input id="start-button" type="button" value="Start" onclick="start()" />
+    </div>
+
+    <div class="roster" id="choose-roster">
+      <!--<input list="pokes" name="pokemon">
+            <datalist id="pokes">
+              <option value="Quilava">
+              <option value="Noctowl">
+              <option value="Sandslash">
+              <option value="Quagsire">
+              <option value="Zebstrika">
+                <option value="Gogoat">
+            </datalist>
+            <input type="submit">-->
+      <select id="grass-roster" class="roster-choice">
+        <option value="Chikorita">Chikorita</option>
+        <option value="Bellossom">Bellossom</option>
+        <option value="Tangela">Tangela</option>
+        <option value="Sunkern">Sunkern</option>
+        <option value="Treecko">Treecko</option>
+        <option value="Leafeon">Leafeon</option>
+      </select>
+      <select id="fire-roster" class="roster-choice">
+        <option value="Charmander">Charmander</option>
+        <option value="Vulpix">Vulpix</option>
+        <option value="Growlithe">Growlithe</option>
+        <option value="Ponyta">Ponyta</option>
+        <option value="Cyndaquil">Cyndaquil</option>
+        <option value="Flareon">Flareon</option>
+      </select>
+      <select id="water-roster" class="roster-choice">
+        <option value="Squirtle">Squirtle</option>
+        <option value="Psyduck">Psyduck</option>
+        <option value="Poliwag">Poliwag</option>
+        <option value="Seel">Seel</option>
+        <option value="Shellder">Shellder</option>
+        <option value="Vaporeon">Vaporeon</option>
+      </select>
+      <select id="normal-roster" class="roster-choice">
+        <option value="Rattata">Rattata</option>
+        <option value="Meowth">Meowth</option>
+        <option value="Lickitung">Lickitung</option>
+        <option value="Chansey">Chansey</option>
+        <option value="Kangaskhan">Kangaskhan</option>
+      </select>
+      <select id="flying-roster" class="roster-choice">
+        <option value="Pidgey">Pidgey</option>
+        <option value="Spearow">Spearow</option>
+        <option value="Farfetch'd">Farfetch'd</option>
+        <option value="Doduo">Doduo</option>
+        <option value="Hoothoot">Hoothoot</option>
+      </select>
+      <select id="rock-roster" class="roster-choice">
+        <option value="Bonsly">Bonsly</option>
+        <option value="Nosepass">Nosepass</option>
+        <option value="Cranidos">Cranidos</option>
+        <option value="Roggenrola">Roggenrola</option>
+        <option value="Rockruff">Rockruff</option>
+      </select>
+      <select id="ground-roster" class="roster-choice">
+        <option value="Sandshrew">Sandshrew</option>
+        <option value="Diglett">Diglett</option>
+        <option value="Cubone">Cubone</option>
+        <option value="Phanpy">Phanpy</option>
+        <option value="Trapinch">Trapinch</option>
+      </select>
+      <select id="psychic-roster" class="roster-choice">
+        <option value="Abra">Abra</option>
+        <option value="Drowzee">Drowzee</option>
+        <option value="Unown">Unown</option>
+        <option value="Wobbuffet">Wobbuffet</option>
+        <option value="Spoink">Spoink</option>
+        <option value="Espeon">Espeon</option>
+      </select>
+      <select id="ghost-roster" class="roster-choice">
+        <option value="Misdreavus">Misdreavus</option>
+        <option value="Shuppet">Shuppet</option>
+        <option value="Duskull">Duskull</option>
+        <option value="Yamask">Yamask</option>
+      </select>
+      <select id="bug-roster" class="roster-choice">
+        <option value="Caterpie">Caterpie</option>
+        <option value="Pinsir">Pinsir</option>
+        <option value="Pineco">Pineco</option>
+        <option value="Wurmple">Wurmple</option>
+        <option value="Kricketot">Kricketot</option>
+      </select>
+      <select id="electric-roster" class="roster-choice">
+        <option value="Pikachu">Pikachu</option>
+        <option value="Voltorb">Voltorb</option>
+        <option value="Mareep">Mareep</option>
+        <option value="Electrike">Electrike</option>
+        <option value="Shinx">Shinx</option>
+        <option value="Jolteon">Jolteon</option>
+      </select>
+      <select id="poison-roster" class="roster-choice">
+        <option value="Ekans">Ekans</option>
+        <option value="Nidoran">Nidoran</option>
+        <option value="Grimer">Grimer</option>
+        <option value="Koffing">Koffing</option>
+        <option value="Gulpin">Gulpin</option>
+      </select>
+      <select id="fighting-roster" class="roster-choice">
+        <option value="Mankey">Mankey</option>
+        <option value="Machop">Machop</option>
+        <option value="Tyrogue">Tyrogue</option>
+        <option value="Makuhita">Makuhita</option>
+        <option value="Riolu">Riolu</option>
+      </select>
+      <select id="fairy-roster" class="roster-choice">
+        <option value="Clefairy">Clefairy</option>
+        <option value="Togepi">Togepi</option>
+        <option value="Snubbull">Snubbull</option>
+        <option value="Flabebe">Flabebe</option>
+        <option value="Spritzee">Spritzee</option>
+        <option value="Sylveon">Sylveon</option>
+      </select>
+      <select id="ice-roster" class="roster-choice">
+        <option value="Snorunt">Snorunt</option>
+        <option value="Vanillite">Vanillite</option>
+        <option value="Cubchoo">Cubchoo</option>
+        <option value="Cryogonal">Cryogonal</option>
+        <option value="Bergmite">Bergmite</option>
+        <option value="Glaceon">Glaceon</option>
+      </select>
+      <select id="dragon-roster" class="roster-choice">
+        <option value="Dratini">Dratini</option>
+        <option value="Bagon">Bagon</option>
+        <option value="Axew">Axew</option>
+        <option value="Druddigon">Druddigon</option>
+        <option value="Goomy">Goomy</option>
+      </select>
+      <select id="dark-roster" class="roster-choice">
+        <option value="Poochyena">Poochyena</option>
+        <option value="Absol">Absol</option>
+        <option value="Purrloin">Purrloin</option>
+        <option value="Zorua">Zorua</option>
+        <option value="Umbreon">Umbreon</option>
+      </select>
+      <select id="steel-roster" class="roster-choice">
+        <option value="Klink">Klink</option>
+        <option value="Meltan">Meltan</option>
+      </select>
+      <input
+        id="submit-button"
+        class="submit"
+        type="button"
+        value="Submit Roster"
+        onclick="chooseRoster()"
+      />
+      <input
+        id="default-button"
+        class="submit"
+        type="button"
+        value="Use Default Roster"
+        onclick="fillRoster()"
+      />
+    </div>
+
+    <div id="in-play">
+      <div class="title">
+        Choose Your Pokemon!
+      </div>
+
+      <div class="pokemon-choices" id="show-choices">
+        <div class="poke-choice">
+          <span id="grass">Grass</span>
+          <!--Bulbasaur-->
+          <span class="hp" id="grhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="fire">Fire</span>
+          <span class="hp" id="fihp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="water">Water</span>
+          <span class="hp" id="wahp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="normal">Normal</span>
+          <span class="hp" id="nohp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="flying">Flying</span>
+          <!--actually dual type, but there's no pure flying type-->
+          <span class="hp" id="flhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="rock">Rock</span
+          ><!--Onix-->
+          <span class="hp" id="rohp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="ground">Ground</span
+          ><!--Diglett-->
+          <span class="hp" id="gdhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="psychic">Psychic</span>
+          <span class="hp" id="pshp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="ghost">Ghost</span
+          ><!--Gastly-->
+          <span class="hp" id="ghhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="bug">Bug</span>
+          <span class="hp" id="buhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="electric">Electric</span>
+          <span class="hp" id="elhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="poison">Poison</span
+          ><!--Nidoran-->
+          <span class="hp" id="pohp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="fighting">Fighting</span
+          ><!--Machop-->
+          <span class="hp" id="fthp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="fairy">Fairy</span
+          ><!--Jigglypuff-->
+          <span class="hp" id="fahp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="ice">Ice</span
+          ><!--Seel-->
+          <span class="hp" id="ichp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="dragon">Dragon</span>
+          <span class="hp" id="drhp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="dark">Dark</span>
+          <!--Poochyena-->
+          <span class="hp" id="dahp">2</span>
+        </div>
+        <div class="poke-choice">
+          <span id="steel">Steel</span
+          ><!--Steelix-->
+          <span class="hp" id="sthp">2</span>
+        </div>
+      </div>
+
+      <div class="battlefield">
+        <span class="score" id="player-score">0</span>
+        <span>|</span>
+        <span id="player-one">Choosing...</span>
+        <span id="player-two">Choosing...</span>
+        <span class="score" id="comp-score">0</span>
+        <span id="player-roster">18</span><span id="left">Pokemon Left:</span>
+        <span id="comp-roster">18</span><span id="right">Pokemon Left:</span>
+        <div id="result">/X\</div>
+        <div id="cresult">\_/</div>
+        <span id="playHealth"></span><span id="compHealth"></span>
+      </div>
+    </div>
+    <div class="end" id="battle-end">
+      <span id="end-play">wdd</span>
+      <span id="end-text">.</span>
+      <span id="end-comp">dwdw</span>
+      <!--<input type="button" value="Restart" onclick="main()">-->
+    </div>
+
+    <!--<script src="app.js"></script>-->
+    <script src="alt.js"></script>
+  </body>
+</html>

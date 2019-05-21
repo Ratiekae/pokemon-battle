@@ -1,0 +1,519 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(49, 49, 49);
+  color: white;
+}
+
+header {
+  background: rgb(167, 1, 1);
+  color: rgb(235, 232, 232);
+  border: 1px solid gold;
+  border-radius: 5%;
+}
+
+header > h1 {
+  text-shadow: 3px 3px 0 black;
+  font-size: 75px;
+  text-align: center;
+  font-family: fantasy, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-family: fantasy, sans-serif;
+  padding: 10px;
+  font-size: 25px;
+}
+
+.pokemon-choices {
+  text-align: center;
+  margin: 5px auto;
+}
+
+.poke-choice {
+  font-size: 35px;
+  display: inline-block;
+  margin: 15px 5px;
+  font-weight: bold;
+  position: relative;
+  padding: 1px auto;
+}
+
+.hp {
+  background: rgb(11, 175, 11);
+  color: white;
+  position: absolute;
+  border: 1px solid white;
+  padding: 0 1px;
+  font-size: 17px;
+  top: -15px;
+  right: -6px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#grass {
+  background: white;
+  color: darkgreen;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkgreen;
+  padding: 5px;
+}
+
+#grass:hover {
+  background: darkgreen;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#fire {
+  background: white;
+  color: darkorange;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkorange;
+  padding: 5px;
+}
+
+#fire:hover {
+  background: darkorange;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#water {
+  background: white;
+  color: darkblue;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkblue;
+  padding: 5px;
+}
+
+#water:hover {
+  background: darkblue;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#normal {
+  background: white;
+  color: rgb(134, 133, 133);
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid rgb(134, 133, 133);
+  padding: 5px;
+}
+
+#normal:hover {
+  background: rgb(134, 133, 133);
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#flying {
+  background: white;
+  color: rgb(4, 233, 233);
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid rgb(4, 233, 233);
+  padding: 5px;
+}
+
+#flying:hover {
+  background: rgb(4, 233, 233);
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#rock {
+  background: white;
+  color: brown;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid brown;
+  padding: 5px;
+}
+
+#rock:hover {
+  background: brown;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#ground {
+  background: white;
+  color: saddlebrown;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid saddlebrown;
+  padding: 5px;
+}
+
+#ground:hover {
+  background: saddlebrown;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#psychic {
+  background: white;
+  color: darkmagenta;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkmagenta;
+  padding: 5px;
+}
+
+#psychic:hover {
+  background: darkmagenta;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#ghost {
+  background: white;
+  color: mediumslateblue;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid mediumslateblue;
+  padding: 5px;
+}
+
+#ghost:hover {
+  background: mediumslateblue;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#bug {
+  background: white;
+  color: darkolivegreen;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkolivegreen;
+  padding: 5px;
+}
+
+#bug:hover {
+  background: darkolivegreen;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#electric {
+  background: white;
+  color: goldenrod;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid goldenrod;
+  padding: 5px;
+}
+
+#electric:hover {
+  background: goldenrod;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#poison {
+  background: white;
+  color: darkorchid;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkorchid;
+  padding: 5px;
+}
+
+#poison:hover {
+  background: darkorchid;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#fighting {
+  background: white;
+  color: darkred;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkred;
+  padding: 5px;
+}
+
+#fighting:hover {
+  background: darkred;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#fairy {
+  background: white;
+  color: magenta;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid magenta;
+  padding: 5px;
+}
+
+#fairy:hover {
+  background: magenta;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#ice {
+  background: white;
+  color: darkturquoise;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkturquoise;
+  padding: 5px;
+}
+
+#ice:hover {
+  background: darkturquoise;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#dragon {
+  background: white;
+  color: purple;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid purple;
+  padding: 5px;
+}
+
+#dragon:hover {
+  background: purple;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#dark {
+  background: white;
+  color: rgb(54, 52, 54);
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid rgb(54, 52, 54);
+  padding: 5px;
+}
+
+#dark:hover {
+  background: rgb(54, 52, 54);
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+#steel {
+  background: white;
+  color: darkgray;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid darkgray;
+  padding: 5px;
+}
+
+#steel:hover {
+  background: darkgray;
+  color: white;
+  text-shadow: 1px 1px 0 black;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.battlefield {
+  text-align: center;
+  padding: 10px;
+  margin: 50px 150px;
+  background: lightgray;
+  height: 150px;
+  border: 4px solid white;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-shadow: 1px 1px black;
+  position: relative;
+}
+
+#player-one {
+  text-align: right;
+  padding: 10px 30px;
+  color: black;
+  text-shadow: 1px 1px blue;
+  position: absolute;
+  left: 50px;
+  top: 35px;
+}
+
+#player-two {
+  text-align: right;
+  padding: 10px 30px;
+  color: black;
+  text-shadow: 1px 1px red;
+  position: absolute;
+  right: 50px;
+  top: 35px;
+}
+
+#result {
+  margin: 15px 0 0 0;
+  font-size: 75%;
+}
+
+#cresult {
+  font-size: 75%;
+}
+
+#player-roster {
+  position: absolute;
+  left: 8px;
+  font-size: 37px;
+}
+
+#comp-roster {
+  position: absolute;
+  right: 8px;
+  font-size: 37px;
+}
+
+#left {
+  position: absolute;
+  left: 5px;
+  font-size: 12px;
+  top: 2px;
+}
+
+#right {
+  position: absolute;
+  right: 5px;
+  font-size: 12px;
+  top: 2px;
+}
+
+#playHealth {
+  position: absolute;
+  left: 150px;
+  top: 90px;
+  font-size: 24px;
+}
+
+#compHealth {
+  position: absolute;
+  right: 150px;
+  top: 90px;
+  font-size: 24px;
+}
+
+.end {
+  text-align: center;
+  font-size: 125px;
+  font-weight: bold;
+  font-family: fantasy, sans-serif;
+  position: relative;
+  top: 50px;
+}
+
+#end-text {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+#end-play {
+  color: white;
+  text-shadow: 3px 3px 3px blue;
+  position: absolute;
+  left: 175px;
+  top: 75px;
+}
+
+#end-comp {
+  color: white;
+  text-shadow: 3px 3px 3px red;
+  position: absolute;
+  right: 175px;
+  top: 75px;
+}
+
+.start {
+  text-align: center;
+  top: 125px;
+  position: relative;
+}
+
+.start > h1 {
+  font-size: 75px;
+  font-family: fantasy, sans-serif;
+  text-shadow: 0 0 5px #ff0000, 0 0 7px #0000ff;
+}
+
+#start-button {
+  top: 40px;
+  font-size: 35px;
+  padding: 7px 7px;
+  margin: 30px auto;
+  box-shadow: 4px 4px 4px black;
+  color: black;
+  background: white;
+  border-radius: 25%;
+  font-weight: bold;
+}
+
+.roster {
+  text-align: center;
+  box-align: center;
+}
+
+.roster-choice {
+  box-align: center;
+  padding: 15px 15px;
+  margin: 7px 7px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.submit {
+  box-align: center;
+  font-size: 30px;
+  top: 350px;
+  padding: 7px 7px;
+  margin: 30px auto;
+  box-shadow: 4px 4px 4px black;
+  color: black;
+  background: white;
+  border-radius: 25%;
+  font-weight: bold;
+  position: absolute;
+}
+
+#submit-button {
+  left: 450px;
+}
+
+#default-button {
+  right: 450px;
+}
